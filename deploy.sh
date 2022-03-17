@@ -16,4 +16,4 @@ git commit -m 'deploy'
 
 git push -f git@github.com:D3vmotiv/budkowice-restaurant.git main:gh-pages
 
-cd -
+cd ..
