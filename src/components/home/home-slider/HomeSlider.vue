@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import { ref } from "vue";
 import HomeSliderIndicator from "../home-slider/HomeSliderIndicator.vue";
+import HomeSliderContent1 from "./HomeSliderContent1.vue";
+import HomeSliderContent2 from "./HomeSliderContent1.vue";
+import useHomeSlider from './useHomeSlider.ts'
 
-const sliderPage = ref(1);
+const { sliderPage, changeSliderPage } = useHomeSlider()
 
-const changeSliderPage = (page: number) => {
-  sliderPage.value = page;
-};
 </script>
 <template>
   <div
@@ -24,23 +23,8 @@ const changeSliderPage = (page: number) => {
       <div></div>
 
       <div class="w-full md:w-3/4 text-white text-center">
-        <template v-if="sliderPage === 1">
-          <h1 class="mb-2">
-            Restauracja <br />
-            "Karczma na górce"
-          </h1>
-          <p class="px-10">Przepyszne dania w dobrej cenie tylko u nas!</p>
-          <base-button>Menu</base-button>
-        </template>
-
-        <template v-else-if="sliderPage === 2">
-          <h1 class="mb-2">
-            Chcesz zamówić <br />
-            u nas salę?
-          </h1>
-          <p class="px-10">Zobacz jakie to proste!</p>
-          <base-button>Kontakt</base-button>
-        </template>
+        <home-slider-content1 v-if="sliderPage == 1"/>
+        <home-slider-content2 v-if="sliderPage == 2"/>
       </div>
 
       <div></div>
