@@ -34,6 +34,16 @@ const changeSliderPage = (page: number) => {
                         Przepyszne dania w dobrej cenie tylko u nas!
                     </p>
                 </template>
+
+                <template v-else-if="sliderPage === 2">
+                    <h1 class="mb-2">
+                        Chcesz zamówić <br>
+                        u nas salę?
+                    </h1>
+                    <p class="px-10">
+                        Zobacz jakie to proste!
+                    </p>
+                </template>
             </div>
 
             <div>
