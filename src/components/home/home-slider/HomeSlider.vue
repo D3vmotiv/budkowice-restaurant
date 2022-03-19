@@ -14,7 +14,7 @@ const changeSliderPage = (page: number) => {
         id="slider"
         class="w-screen h-screen slider--display slider--background"
         aria-controls="slider--indicators"
-        aria-label="`Główny slider`"
+        aria-label="Główny slider"
         :style="`background-image: url('/images/slider_${sliderPage}.jpg')`"
     >
         <div>
