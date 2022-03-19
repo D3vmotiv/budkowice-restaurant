@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import HomeSliderIndicator from '../home-slider/HomeSliderIndicator.vue'
 
 const sliderPage = ref(1);
+
+const changeSliderPage = (page: number) => {
+    sliderPage.value = page
+}
 
 </script>
 <template>
@@ -32,14 +37,21 @@ const sliderPage = ref(1);
             </div>
 
             <div>
-
             </div>
         </div>
 
         <!-- Slider indicators -->
         <div class="flex gap-3">
-            <button data-home-slider-step="1" class="slider--indicator"></button>
-            <button data-home-slider-step="2" class="slider--indicator"></button>
+            <home-slider-indicator
+                :page="1"
+                :active-page="sliderPage"
+                @onClick="changeSliderPage(1)"
+            />
+            <home-slider-indicator
+                :page="2"
+                :active-page="sliderPage"
+                @onClick="changeSliderPage(2)"
+            />
         </div>
     </div>
 </template>
@@ -50,9 +62,5 @@ const sliderPage = ref(1);
 
 .slider--background {
     @apply bg-cover bg-no-repeat bg-center bg-black-ligth;
-}
-
-.slider--indicator {
-    @apply w-8 h-2 border-2 border-white;
 }
 </style>
