@@ -11,9 +11,10 @@ const emit = defineEmits<{
 
 <template>
     <button
-        @click.stop="() => emit('onClick')"
         class="slider--indicator"
         :class="{'slider--indicator__active': props.page == props.activePage}"
+        :aria-label="`Przejdź do ekranu ${page}`"
+        @click.stop="() => emit('onClick')"
     >
     </button>
 </template>

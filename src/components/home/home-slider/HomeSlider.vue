@@ -13,6 +13,8 @@ const changeSliderPage = (page: number) => {
     <div
         id="slider"
         class="w-screen h-screen slider--display slider--background"
+        aria-controls="slider--indicators"
+        aria-label="`Główny slider`"
         :style="`background-image: url('/images/slider_${sliderPage}.jpg')`"
     >
         <div>
@@ -50,8 +52,7 @@ const changeSliderPage = (page: number) => {
             </div>
         </div>
 
-        <!-- Slider indicators -->
-        <div class="flex gap-3">
+        <div id="slider--indicators" class="flex gap-3">
             <home-slider-indicator
                 :page="1"
                 :active-page="sliderPage"
