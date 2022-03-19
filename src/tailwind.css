@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Limelight';
+        src: url('/fonts/limelight/Limelight-Regular.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Poppins';
+        src: url('/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'Poppins';
+        src: url('/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+        font-weight: bold;
+    }
+
+    body {
+        font-family: 'Poppins';
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Limelight';
+    }
+}
