@@ -26,3 +26,11 @@
         font-family: 'Limelight';
     }
 }
+
+h1 {
+    @apply text-xl
+}
+
+p {
+    @apply text-base
+}
