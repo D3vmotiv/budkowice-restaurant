@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <button class="btn-text btn-sizes bg-primary ">
+    <button class="btn-text btn-sizes btn-bg bg-primary">
         <slot></slot>
     </button>
 </template>
@@ -15,4 +15,18 @@
 .btn-sizes {
     @apply w-[200px] h-[60px];
 }
+
+.btn-bg {
+    @apply relative;
+}
+
+.btn-bg::after {
+    @apply w-full h-full block absolute -right-1 top-1 border-2 border-primary motion-safe:transition-all;
+    content: '';
+}
+
+.btn-bg:hover::after {
+    @apply motion-safe:right-1;
+}
+
 </style>
