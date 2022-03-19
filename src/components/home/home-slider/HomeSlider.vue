@@ -30,6 +30,7 @@ const changeSliderPage = (page: number) => {
             "Karczma na górce"
           </h1>
           <p class="px-10">Przepyszne dania w dobrej cenie tylko u nas!</p>
+          <base-button>123</base-button>
         </template>
 
         <template v-else-if="sliderPage === 2">
