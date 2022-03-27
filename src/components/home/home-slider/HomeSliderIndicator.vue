@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { computed } from "vue"
+
 const props = defineProps<{
   page: number;
   activePage: number;
@@ -7,13 +9,16 @@ const props = defineProps<{
 const emit = defineEmits<{
   (e: "onClick"): void;
 }>();
+
+const isActive = computed(() => props.page == props.activePage)
 </script>
 
 <template>
   <button
     class="slider--indicator"
-    :class="{ 'slider--indicator__active': props.page == props.activePage }"
+    :class="{ 'slider--indicator__active': isActive }"
     :aria-label="`Przejdź do ekranu ${page}`"
+    :tabindex="isActive ? '-1' : undefined"
     @click.stop="() => emit('onClick')"
   ></button>
 </template>
