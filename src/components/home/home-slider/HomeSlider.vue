@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import HomeSliderIndicator from "../home-slider/HomeSliderIndicator.vue";
 import HomeSliderContent1 from "./HomeSliderContent1.vue";
-import HomeSliderContent2 from "./HomeSliderContent1.vue";
+import HomeSliderContent2 from "./HomeSliderContent2.vue";
 import useHomeSlider from './useHomeSlider.ts'
 
 const { sliderPage, changeSliderPage } = useHomeSlider()
