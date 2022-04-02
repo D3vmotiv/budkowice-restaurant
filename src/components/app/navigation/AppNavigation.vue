@@ -17,11 +17,11 @@ const changeNavVisibility = () => {
         <div class="fixed inset-0 z-50 w-screen h-20 flex justify-end items-center p-5">
             <button
                 :aria-expanded="isOpen"
+                :aria-label="isOpen ? 'Zamknij' : 'Otwórz'"
                 @click.stop="changeNavVisibility"
             >
                 <span
                     class="navigation--toggler__burger"
-                    :aria-label="isOpen ? 'Zamknij' : 'Otwórz'"
                 >
                 </span>
             </button>
