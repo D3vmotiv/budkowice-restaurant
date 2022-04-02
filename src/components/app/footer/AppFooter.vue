@@ -6,7 +6,7 @@
     <footer class="bg-secondary text-white p-5">
 
         <a href="/">
-            <h3 class="text-base mb-2">
+            <h3 class="text-lg mb-2">
                 Karczma na Górce
             </h3>
         </a>
