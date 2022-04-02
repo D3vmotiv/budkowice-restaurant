@@ -17,7 +17,7 @@ const { sliderPage, changeSliderPage } = useHomeSlider()
   >
     <slot name="top" />
 
-    <div class="w-full flex">
+    <div class="w-full flex min-h-[40%] items-center">
       <div></div>
 
       <div class="w-full md:w-3/4 text-white text-center">
