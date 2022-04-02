@@ -14,7 +14,7 @@ const changeNavVisibility = () => {
         class="w-full flex justify-end"
         :class="{ 'navigation__open': isOpen}"
     >
-        <div class="sticky z-50">
+        <div class="fixed inset-0 z-50 w-screen h-20 flex justify-end items-center p-5">
             <button
                 :aria-expanded="isOpen"
                 @click.stop="changeNavVisibility"

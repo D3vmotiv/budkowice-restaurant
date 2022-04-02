@@ -17,7 +17,7 @@
 
         <div class="bg-primary text-white">
             <a
-                href="#"
+                href="https://www.facebook.com/Karczma-na-G%C3%B3rce-255581354538501/"
                 target="_blank"
                 rel="noopener nofollow"
                 class="inline-flex w-full h-24 items-center p-6 gap-3"
@@ -38,8 +38,8 @@
 <style lang="postcss">
 .navigation--screen {
     @apply
-        fixed inset-0 z-40
-        w-screen h-screen
+        fixed left-0 right-0 top-0 z-40
+        w-screen h-full
         flex flex-col justify-between
         bg-white;
 }
