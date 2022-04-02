@@ -15,9 +15,7 @@ const { sliderPage, changeSliderPage } = useHomeSlider()
     aria-label="Główny slider"
     :style="`background-image: url('/images/slider_${sliderPage}.jpg')`"
   >
-    <div>
-      <slot name="top" />
-    </div>
+    <slot name="top" />
 
     <div class="w-full flex">
       <div></div>

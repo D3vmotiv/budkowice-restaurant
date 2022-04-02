@@ -1,0 +1,62 @@
+<script setup lang="ts">
+import { ref } from "vue"
+import AppNavigationMobileFull from "./AppNavigationMobileFull.vue";
+
+const isOpen = ref(false)
+const changeNavVisibility = () => {
+    isOpen.value = !isOpen.value
+}
+
+</script>
+
+<template>
+    <nav
+        class="w-full flex justify-end"
+        :class="{ 'navigation__open': isOpen}"
+    >
+        <div class="sticky z-50">
+            <button
+                :aria-expanded="isOpen"
+                @click.stop="changeNavVisibility"
+            >
+                <span
+                    class="navigation--toggler__burger"
+                    :aria-label="isOpen ? 'Zamknij' : 'Otwórz'"
+                >
+                </span>
+            </button>
+        </div>
+
+        <!-- Anim background -->
+        <div class="hidden w-screen h-screen bg-primary" />
+        
+        <app-navigation-mobile-full v-show="isOpen" />
+    </nav>
+</template>
+<style lang="postcss" scoped>
+.navigation--toggler__burger {
+    @apply relative;
+}
+
+.navigation--toggler__burger,
+.navigation--toggler__burger::after {
+    @apply inline-block w-[40px] h-[5px] bg-white motion-safe:transition-all;
+}
+
+.navigation--toggler__burger::after {
+    @apply absolute left-0;
+    content: '';
+}
+
+.navigation--toggler__burger::after {
+    @apply -translate-y-3
+}
+
+.navigation__open .navigation--toggler__burger {
+    @apply bg-primary rotate-45;
+}
+
+.navigation__open .navigation--toggler__burger::after {
+    @apply bg-primary -rotate-90 -translate-y-[1px];
+}
+</style>
