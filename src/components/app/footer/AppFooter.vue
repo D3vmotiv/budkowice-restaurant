@@ -12,7 +12,7 @@
         </a>
 
         <p class="text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dui posuere risus odio.ia
+            Zapraszamy serdecznie do Karczmy na Górce usytuowanej w sercu Starych Budkowic.
         </p>
 
         <hr class="my-4">

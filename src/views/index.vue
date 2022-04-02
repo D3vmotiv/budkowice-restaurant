@@ -7,6 +7,12 @@ import AppCard from "@/components/app/card/AppCard.vue"
 
 useHead({
   title: "Karczma na górce - Strona główna",
+  meta: [
+    {
+      name: 'description',
+      content: 'Zapraszamy serdecznie do Karczmy na Górce usytuowanej w sercu Starych Budkowic. Atmosfera naszego lokalu podoba się i młodszym i starszym. Staramy się, by każdy znalazł u nas to, co lubi. Mamy nadzieję, że muzyka, miła obsługa, obecność stałych bywalców i smaczne jedzenie sprawi, że poczujecie się tutaj jak w domu. Polecamy potrawy kuchni śląskiej oraz polskiej z elementami kuchni włoskiej. Nowa elegancka, nowoczesna i przestronna sala będzie doskonałą oprawą dla rodzinnych uroczystości, imprez okolicznościowych czy spotkań biznesowych. Karczma na Górce świadczy również usługi cateringowe. Z przyjemnością przygotujemy dla Państwa przyjęcia weselne, komunie oraz inne imprezy okolicznościowe. Pokaż mniej'
+    }    
+  ],
 });
 </script>
 
