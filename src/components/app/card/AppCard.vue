@@ -12,6 +12,7 @@ const props = defineProps<{
         :aria-label="props.sectionName"
     >
         <img
+            v-if="props.imageUrl"
             class="w-full h-80 object-cover"
             :src="props.imageUrl"
             alt=""
