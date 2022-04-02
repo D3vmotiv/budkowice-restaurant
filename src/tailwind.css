@@ -6,16 +6,19 @@
     @font-face {
         font-family: 'Limelight';
         src: url('/fonts/limelight/Limelight-Regular.ttf') format('truetype');
+        font-display: swap;
     }
 
     @font-face {
         font-family: 'Poppins';
         src: url('/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+        font-display: swap;
     }
     @font-face {
         font-family: 'Poppins';
         src: url('/fonts/poppins/Poppins-Bold.ttf') format('truetype');
         font-weight: bold;
+        font-display: swap;
     }
 
     body {
