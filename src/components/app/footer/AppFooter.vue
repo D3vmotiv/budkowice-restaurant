@@ -6,9 +6,9 @@
     <footer class="bg-secondary text-white p-5">
 
         <a href="/">
-            <h4 class="text-base mb-2">
+            <h3 class="text-base mb-2">
                 Karczma na Górce
-            </h4>
+            </h3>
         </a>
 
         <p class="text-sm">
@@ -17,9 +17,9 @@
 
         <hr class="my-4">
 
-        <h5 class="text-base mb-1">
+        <h4 class="text-base mb-1">
             Szybka nawigacja
-        </h5>
+        </h4>
 
         <ul class="text-sm">
             <li>
@@ -43,9 +43,9 @@
 
         <hr class="my-4">
 
-        <h5 class="text-base mb-2">
+        <h4 class="text-base mb-2">
             Dane kontaktowe
-        </h5>
+        </h4>
 
         <ul>
             <li>

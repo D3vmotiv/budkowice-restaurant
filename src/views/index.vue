@@ -24,10 +24,10 @@ useHead({
       section-name="Menu"
     >
       <template #title>
-        <h3 class="text-xl mb-3">
+        <h2 class="text-xl mb-3">
           Poznaj nasze
           <span class="text-primary">menu</span>
-        </h3>
+        </h2>
       </template>
 
       <template #default>
@@ -46,10 +46,10 @@ useHead({
       section-name="Kontakt"
     >
       <template #title>
-        <h3 class="text-xl mb-3">
+        <h2 class="text-xl mb-3">
           Odwiedź
           <span class="text-primary">nas</span>
-        </h3>
+        </h2>
       </template>
 
       <template #default>
@@ -68,10 +68,10 @@ useHead({
       section-name="Nasz facebook"
     >
       <template #title>
-        <h3 class="text-xl mb-3">
+        <h2 class="text-xl mb-3">
           Nasza strona na
           <span class="text-facebookBlue">facebooku</span>
-        </h3>
+        </h2>
       </template>
 
       <template #default>
