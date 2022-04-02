@@ -19,6 +19,7 @@ const isActive = computed(() => props.page == props.activePage)
     :class="{ 'slider--indicator__active': isActive }"
     :aria-label="`Przejdź do ekranu ${page}`"
     :tabindex="isActive ? '-1' : undefined"
+    :disabled="isActive ? true : undefined"
     @click.stop="() => emit('onClick')"
   ></button>
 </template>
