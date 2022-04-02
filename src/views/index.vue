@@ -2,6 +2,7 @@
 import { useHead } from "@vueuse/head";
 import HomeSlider from "@/components/home/home-slider/HomeSlider.vue";
 import AppNavigation from "@/components/app/navigation/AppNavigation.vue";
+import AppFooter from "../components/app/footer/AppFooter.vue";
 import AppCard from "@/components/app/card/AppCard.vue"
 
 useHead({
@@ -16,7 +17,7 @@ useHead({
     </template>
   </home-slider>
 
-  <div class="p-5 bg-white-ligth flex flex-col gap-y-12">
+  <main class="p-5 bg-white-ligth flex flex-col gap-y-12">
   
     <app-card
       image-url="/images/image_1.jpg"
@@ -88,6 +89,8 @@ useHead({
       </template>
     </app-card>
 
-  </div>
+  </main>
+  
+  <app-footer />
 
 </template>
