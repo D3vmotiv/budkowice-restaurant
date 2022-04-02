@@ -7,7 +7,7 @@ const props = defineProps<{
 
 </script>
 <template>
-    <section
+    <article
         class="w-full bg-white"
         :aria-label="props.sectionName"
     >
@@ -29,5 +29,5 @@ const props = defineProps<{
             <slot name="bottom" />
         </div>
 
-    </section>
+    </article>
 </template>
