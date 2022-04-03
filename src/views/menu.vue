@@ -16,7 +16,7 @@ useHead({
 </script>
 
 <template>
-    <div>
+    <div class="min-h-screen">
         <app-navigation filled />
 
         <menu-pdf url="/files/Menu ceny lipiec 2021.pdf" />

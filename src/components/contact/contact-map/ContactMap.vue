@@ -3,7 +3,7 @@
         class="w-full"
         aria-label="Nasza lokalizacja na mapie"
     >
-        <h2 class="text-xl text-primary mb-2 pl-3">
+        <h2 class="text-xl text-primary mb-2 pl-3 md:text-2xl">
             Jak dojechać?
         </h2>
 

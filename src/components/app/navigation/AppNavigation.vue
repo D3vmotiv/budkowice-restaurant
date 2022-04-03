@@ -18,7 +18,7 @@ const {
 <template>
     <nav
         class="w-full flex justify-end motion-safe:transition-all"
-        :class="{ 'navigation__open': isNavOpen, 'h-20 md:h-auto': shouldBeFilled }"
+        :class="{ 'navigation__open': isNavOpen, 'h-20': shouldBeFilled }"
     >
         <!-- Mobile nav -->
         <div class="block md:hidden">

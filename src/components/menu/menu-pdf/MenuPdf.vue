@@ -9,7 +9,7 @@ const props = defineProps<{
     <object
         :data="props.url"
         type="application/pdf"
-        class="w-full min-h-[70vh] md:min-h-0"
+        class="w-full min-h-[70vh] md:min-h-screen"
     >
         <div class="p-5">
 

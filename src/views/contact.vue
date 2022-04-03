@@ -31,8 +31,16 @@ useHead({
             </template>
         </contact-welcome>
 
-        <main class="p-5 bg-white-ligth flex flex-col gap-y-12">
-            <contact-card section-name="Dane kontaktowe">
+        <main
+            class="
+                p-5 bg-white-ligth flex flex-col gap-y-12
+                md:px-7 md:py-10 md:gap-y-20
+            "
+        >
+            <contact-card
+                section-name="Dane kontaktowe"
+                image-url="/images/image_7.jpg"
+            >
                 <template #header>
                     Dane kontaktowe
                 </template>
@@ -63,7 +71,11 @@ useHead({
                 </template>
             </contact-card>
 
-            <contact-card section-name="Godziny otwarcia">
+            <contact-card
+                section-name="Godziny otwarcia"
+                image-url="/images/image_6.jpg"
+                reversed
+            >
                 <template #header>
                     Godziny otwarcia
                 </template>
