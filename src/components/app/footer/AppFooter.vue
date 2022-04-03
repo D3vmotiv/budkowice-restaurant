@@ -35,6 +35,12 @@
             </li>
 
             <li>
+                <a href="/pizza" class="inline-block py-1 w-full">
+                    Pizza
+                </a>
+            </li>
+
+            <li>
                 <a href="/kontakt" class="inline-block py-1 w-full">
                     Kontakt
                 </a>

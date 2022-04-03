@@ -11,6 +11,9 @@
                 <router-link to="/menu">Menu</router-link>
             </li>
             <li class="my-4">
+                <router-link to="/pizza">Pizza</router-link>
+            </li>
+            <li class="my-4">
                 <router-link to="/kontakt">Kontakt</router-link>
             </li>
         </ul>

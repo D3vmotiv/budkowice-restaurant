@@ -16,7 +16,7 @@ const props = defineProps<{
 <template>
     <nav
         class="w-full flex justify-end"
-        :class="{ 'navigation__open': isOpen}"
+        :class="{ 'navigation__open': isOpen, 'h-20': props.filled }"
     >
         <div
             class="navigation--bar"
@@ -71,7 +71,7 @@ const props = defineProps<{
     @apply fixed inset-0 z-50 w-screen h-20 flex justify-end items-center p-5;
 }
 .navigation--bar__filed {
-    @apply relative bg-primary;
+    @apply bg-primary;
 }
 .navigation__open .navigation--bar__filed {
     @apply bg-transparent;
