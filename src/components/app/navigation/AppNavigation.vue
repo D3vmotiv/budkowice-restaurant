@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import AppNavigationMobileFull from "./AppNavigationMobileFull.vue";
+import AppNavigationDesktopLinks from "./AppNavigationDesktopLinks.vue";
 import useAppNavigation from "./useAppNavigation";
 
 const props = defineProps<{
@@ -17,28 +18,37 @@ const {
 <template>
     <nav
         class="w-full flex justify-end motion-safe:transition-all"
-        :class="{ 'navigation__open': isNavOpen, 'h-20': shouldBeFilled }"
+        :class="{ 'navigation__open': isNavOpen, 'h-20 md:h-auto': shouldBeFilled }"
     >
-        <div
-            class="navigation--bar"
-            :class="{'navigation--bar__filed': shouldBeFilled}"
-        >
-            <button
-                :aria-expanded="isNavOpen"
-                :aria-label="isNavOpen ? 'Zamknij' : 'Otwórz'"
-                @click.stop="changeNavVisibility"
+        <!-- Mobile nav -->
+        <div class="block md:hidden">
+            <div
+                class="navigation--bar"
+                :class="{'navigation--bar__filed': shouldBeFilled}"
             >
-                <span
-                    class="navigation--toggler__burger"
+                <button
+                    :aria-expanded="isNavOpen"
+                    :aria-label="isNavOpen ? 'Zamknij' : 'Otwórz'"
+                    @click.stop="changeNavVisibility"
                 >
-                </span>
-            </button>
+                    <span
+                        class="navigation--toggler__burger"
+                    >
+                    </span>
+                </button>
+            </div>
+
+            <!-- Anim background -->
+            <div class="hidden w-screen h-screen bg-primary" />
+            
+            <app-navigation-mobile-full v-show="isNavOpen" />
         </div>
 
-        <!-- Anim background -->
-        <div class="hidden w-screen h-screen bg-primary" />
-        
-        <app-navigation-mobile-full v-show="isNavOpen" />
+        <!-- Desktop nav -->
+        <app-navigation-desktop-links
+            class="hidden navigation--bar md:block"
+            :class="{'navigation--bar__filed': shouldBeFilled}"
+        />
     </nav>
 </template>
 <style lang="postcss" scoped>

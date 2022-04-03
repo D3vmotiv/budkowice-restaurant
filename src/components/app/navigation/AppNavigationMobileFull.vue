@@ -38,7 +38,7 @@
         </div>
     </div>
 </template>
-<style lang="postcss">
+<style lang="postcss" scoped>
 .navigation--screen {
     @apply
         fixed left-0 right-0 top-0 z-40
