@@ -6,7 +6,7 @@ import AppFooter from "../components/app/footer/AppFooter.vue";
 import AppCard from "@/components/app/card/AppCard.vue"
 
 useHead({
-  title: "Karczma na górce - Strona główna",
+  title: "Karczma na Górce - Strona główna",
   meta: [
     {
       name: 'description',
