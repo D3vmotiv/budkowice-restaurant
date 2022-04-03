@@ -6,7 +6,9 @@ import contactInfo from "@/const/contactInfo.ts"
     <footer
         class="
             bg-secondary text-white p-5
-            md:p-7 lg:p-12 md:grid md:grid-cols-[1fr_auto_auto] md:gap-x-10 lg:gap-x-16 md:gap-y-5
+            md:p-7 md:grid md:grid-cols-[1fr_auto_auto] md:gap-x-10 md:gap-y-5 
+            lg:gap-x-16 lg:p-12
+            xl:gap-x-32 xl:px-24 xl:py-16 xl:gap-y-14
         "
     >
 
@@ -17,7 +19,7 @@ import contactInfo from "@/const/contactInfo.ts"
                     alt="Karczma na Górce"
                     width="711"
                     height="200"
-                    class="w-1/2 mb-2 md:mb-5"
+                    class="w-1/2 mb-2 md:mb-5 xl:mb-8 max-w-[200px]"
                 />
             </a>
 

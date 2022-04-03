@@ -32,8 +32,9 @@ useHead({
   
     <app-card
       image-url="/images/image_1.jpg"
+      additional-image-url="/images/image_2.jpg"
       section-name="Menu"
-      class="md:px-7 md:py-16 lg:py-24 lg:px-12"
+      class="md:px-7 md:py-16 lg:py-24 lg:px-12 xl:py-48 xl:px-24"
     >
       <template #title>
         <h2 class="text-xl md:text-2xl lg:text-3xl mb-3">
@@ -56,7 +57,8 @@ useHead({
     <app-card
       image-url="/images/image_3.jpg"
       section-name="Kontakt"
-      class="md:px-7 md:py-16 lg:py-24 lg:px-12 md:bg-primary-light"
+      class="md:px-7 md:py-16 lg:py-24 lg:px-12 xl:py-48 xl:px-24 md:bg-primary-light"
+      colored
     >
       <template #title>
         <h2 class="text-xl md:text-2xl lg:text-3xl mb-3">
@@ -79,7 +81,9 @@ useHead({
     <app-card
       image-url="/images/image_4.jpg"
       section-name="Nasz facebook"
-      class="md:px-7 md:py-16 lg:py-24 lg:px-12"
+      additional-image-url="/images/image_5.jpg"
+      class="md:px-7 md:py-16 lg:py-24 lg:px-12 xl:py-48 xl:px-24"
+      bg-color="bg-facebookBlue-ligth"
       reversed
     >
       <template #title>

@@ -10,14 +10,14 @@ const { sliderPage, changeSliderPage } = useHomeSlider({ maxPage: 2 })
 <template>
   <div
     id="slider"
-    class="w-screen h-screen slider--display slider--background"
+    class="h-screen slider--display slider--background"
     aria-controls="slider--indicators"
     aria-label="Główny slider"
     :style="`background-image: url('/images/slider_${sliderPage}.jpg')`"
   >
     <slot name="top" />
 
-    <div class="w-full flex min-h-[40%] items-center justify-between">
+    <div class="w-full flex min-h-[40%] items-center justify-between xl:p-24">
       <div class="hidden md:block">
         <button
           @click="changeSliderPage(sliderPage - 1)"

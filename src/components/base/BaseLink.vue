@@ -19,13 +19,13 @@ switch(props.variant) {
 <template>
     <router-link
         v-if="props.to"
-        class="text-primary font-Limelight text-base inline-flex"
+        class="text-primary font-Limelight text-base inline-flex base-link"
         :to="props.to"
     >
         <slot />
 
         <img
-            class="ml-2"
+            class="ml-2 motion-safe:transition-all"
             :src="arrowUrl"
             alt=""
             width="20"
@@ -38,12 +38,12 @@ switch(props.variant) {
         :href="props.href"
         target="_blank"
         rel="noopener nofollow"
-        class="text-primary font-Limelight text-base inline-flex"
+        class="text-primary font-Limelight text-base inline-flex base-link"
     >
         <slot />
 
         <img
-            class="ml-2"
+            class="ml-2 motion-safe:transition-all"
             :src="arrowUrl"
             alt=""
             width="20"
@@ -51,3 +51,8 @@ switch(props.variant) {
         >
     </a>
 </template>
+<style lang="postcss" scoped>
+.base-link:hover img {
+    @apply translate-x-2/4;
+}
+</style>
