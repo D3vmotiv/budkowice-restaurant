@@ -1,30 +1,31 @@
 <script setup lang="ts">
-import { ref } from "vue"
 import AppNavigationMobileFull from "./AppNavigationMobileFull.vue";
-
-const isOpen = ref(false)
-const changeNavVisibility = () => {
-    isOpen.value = !isOpen.value
-}
+import useAppNavigation from "./useAppNavigation";
 
 const props = defineProps<{
     filled?: boolean;
 }>();
 
+const { 
+    isNavOpen,
+    shouldBeFilled,
+    changeNavVisibility
+} = useAppNavigation({ isInitialFilled: props.filled })
+
 </script>
 
 <template>
     <nav
-        class="w-full flex justify-end"
-        :class="{ 'navigation__open': isOpen, 'h-20': props.filled }"
+        class="w-full flex justify-end motion-safe:transition-all"
+        :class="{ 'navigation__open': isNavOpen, 'h-20': shouldBeFilled }"
     >
         <div
             class="navigation--bar"
-            :class="{'navigation--bar__filed': props.filled}"
+            :class="{'navigation--bar__filed': shouldBeFilled}"
         >
             <button
-                :aria-expanded="isOpen"
-                :aria-label="isOpen ? 'Zamknij' : 'Otwórz'"
+                :aria-expanded="isNavOpen"
+                :aria-label="isNavOpen ? 'Zamknij' : 'Otwórz'"
                 @click.stop="changeNavVisibility"
             >
                 <span
@@ -37,7 +38,7 @@ const props = defineProps<{
         <!-- Anim background -->
         <div class="hidden w-screen h-screen bg-primary" />
         
-        <app-navigation-mobile-full v-show="isOpen" />
+        <app-navigation-mobile-full v-show="isNavOpen" />
     </nav>
 </template>
 <style lang="postcss" scoped>
@@ -68,7 +69,7 @@ const props = defineProps<{
 }
 
 .navigation--bar {
-    @apply fixed inset-0 z-50 w-screen h-20 flex justify-end items-center p-5;
+    @apply fixed inset-0 z-50 w-screen h-20 flex justify-end items-center p-5 motion-safe:transition-all;
 }
 .navigation--bar__filed {
     @apply bg-primary;
