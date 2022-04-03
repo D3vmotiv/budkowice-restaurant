@@ -23,19 +23,19 @@
 
         <ul class="text-sm">
             <li>
-                <a href="/" class="inline-block py-1">
+                <a href="/" class="inline-block py-1 w-full">
                     Strona główna
                 </a>
             </li>
 
             <li>
-                <a href="/menu" class="inline-block py-1">
+                <a href="/menu" class="inline-block py-1 w-full">
                     Menu
                 </a>
             </li>
 
             <li>
-                <a href="/kontakt" class="inline-block py-1">
+                <a href="/kontakt" class="inline-block py-1 w-full">
                     Kontakt
                 </a>
             </li>
@@ -53,7 +53,7 @@
                     href="https://goo.gl/maps/SggQTNRHx5GCTFTr8"
                     target="_blank"
                     rel="noopener nofollow"
-                    class="inline-flex items-center py-1 text-sm"
+                    class="inline-flex items-center py-1 text-sm w-full"
                 >
                     <img
                         src="/images/localization.svg"
@@ -70,7 +70,7 @@
             <li>
                 <a
                     href="tel:+48774210498"
-                    class="inline-flex items-center py-1 text-sm"
+                    class="inline-flex items-center py-1 text-sm w-full"
                 >
                     <img
                         src="/images/phone.svg"
@@ -87,7 +87,7 @@
             <li>
                 <a
                     href="mailto:karczmanagorce@gmail.com"
-                    class="inline-flex items-center py-1 text-sm"
+                    class="inline-flex items-center py-1 text-sm w-full"
                 >
                     <img
                         src="/images/email.svg"
@@ -106,7 +106,7 @@
                     href="https://www.facebook.com/Karczma-na-G%C3%B3rce-255581354538501/"
                     target="_blank"
                     rel="noopener nofollow"
-                    class="inline-flex items-center py-1 text-sm"
+                    class="inline-flex items-center py-1 text-sm w-full"
                 >
                     <img
                         src="/images/facebook.svg"
