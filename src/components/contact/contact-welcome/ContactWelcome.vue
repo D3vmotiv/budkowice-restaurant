@@ -5,7 +5,7 @@
   >
     <slot name="top" />
 
-    <h1 class="text-white">
+    <h1 class="text-white md:text-2xl lg:text-3xl">
         Kontakt
     </h1>
 

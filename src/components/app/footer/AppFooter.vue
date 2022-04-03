@@ -6,7 +6,7 @@ import contactInfo from "@/const/contactInfo.ts"
     <footer
         class="
             bg-secondary text-white p-5
-            md:p-7 md:grid md:grid-cols-[1fr_auto_auto] md:gap-x-10 md:gap-y-5
+            md:p-7 lg:p-12 md:grid md:grid-cols-[1fr_auto_auto] md:gap-x-10 lg:gap-x-16 md:gap-y-5
         "
     >
 
@@ -21,7 +21,7 @@ import contactInfo from "@/const/contactInfo.ts"
                 />
             </a>
 
-            <p class="text-sm">
+            <p class="text-sm max-w-md">
                 Zapraszamy serdecznie do Karczmy na Górce usytuowanej w sercu Starych Budkowic.
             </p>
         </div>

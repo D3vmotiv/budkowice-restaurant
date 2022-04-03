@@ -35,11 +35,13 @@ useHead({
             class="
                 p-5 bg-white-ligth flex flex-col gap-y-12
                 md:px-7 md:py-10 md:gap-y-20
+                lg:px-16 lg:gap-y-24
             "
         >
             <contact-card
                 section-name="Dane kontaktowe"
                 image-url="/images/image_7.jpg"
+                class="lg:py-8"
             >
                 <template #header>
                     Dane kontaktowe

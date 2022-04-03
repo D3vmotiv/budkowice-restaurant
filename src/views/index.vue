@@ -33,7 +33,7 @@ useHead({
     <app-card
       image-url="/images/image_1.jpg"
       section-name="Menu"
-      class="md:px-7 md:py-16"
+      class="md:px-7 md:py-16 lg:py-24 lg:px-12"
     >
       <template #title>
         <h2 class="text-xl md:text-2xl lg:text-3xl mb-3">
@@ -56,7 +56,7 @@ useHead({
     <app-card
       image-url="/images/image_3.jpg"
       section-name="Kontakt"
-      class="md:px-7 md:py-16 md:bg-primary-light"
+      class="md:px-7 md:py-16 lg:py-24 lg:px-12 md:bg-primary-light"
     >
       <template #title>
         <h2 class="text-xl md:text-2xl lg:text-3xl mb-3">
@@ -79,7 +79,7 @@ useHead({
     <app-card
       image-url="/images/image_4.jpg"
       section-name="Nasz facebook"
-      class="md:px-7 md:py-16"
+      class="md:px-7 md:py-16 lg:py-24 lg:px-12"
       reversed
     >
       <template #title>
