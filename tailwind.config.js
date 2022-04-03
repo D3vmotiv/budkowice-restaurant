@@ -29,7 +29,8 @@ module.exports = {
         base: "18px",
         lg: "24px",
         xl: "30px",
-        "2xl": "50px",
+        "2xl": "40px",
+        "3xl": "50px",
       },
       fontFamily: {
         Limelight: ["Limelight", "sans-serif"],

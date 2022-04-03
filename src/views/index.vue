@@ -23,14 +23,19 @@ useHead({
     </template>
   </home-slider>
 
-  <main class="p-5 bg-white-ligth flex flex-col gap-y-12">
+  <main
+    class="
+      p-5 bg-white-ligth flex flex-col gap-y-12
+      md:px-7 py-12 gap-y-16 md:bg-white 
+    "
+  >
   
     <app-card
       image-url="/images/image_1.jpg"
       section-name="Menu"
     >
       <template #title>
-        <h2 class="text-xl mb-3">
+        <h2 class="text-xl md:text-2xl lg:text-3xl mb-3">
           Poznaj nasze
           <span class="text-primary">menu</span>
         </h2>
@@ -41,7 +46,7 @@ useHead({
       </template>
 
       <template #bottom>
-        <base-link to="/menu" class="mt-3">
+        <base-link to="/menu" class="mt-3 md:text-lg">
           Sprawdź nasze menu
         </base-link>
       </template>
@@ -50,9 +55,10 @@ useHead({
     <app-card
       image-url="/images/image_3.jpg"
       section-name="Kontakt"
+      reversed
     >
       <template #title>
-        <h2 class="text-xl mb-3">
+        <h2 class="text-xl md:text-2xl lg:text-3xl mb-3">
           Odwiedź
           <span class="text-primary">nas</span>
         </h2>
@@ -63,7 +69,7 @@ useHead({
       </template>
 
       <template #bottom>
-        <base-link to="/kontakt" class="mt-3">
+        <base-link to="/kontakt" class="mt-3 md:text-lg">
           Kontakt
         </base-link>
       </template>
@@ -74,7 +80,7 @@ useHead({
       section-name="Nasz facebook"
     >
       <template #title>
-        <h2 class="text-xl mb-3">
+        <h2 class="text-xl md:text-2xl lg:text-3xl mb-3">
           Nasza strona na
           <span class="text-facebookBlue">facebooku</span>
         </h2>
@@ -88,7 +94,7 @@ useHead({
         <base-link
           href="https://www.facebook.com/Karczma-na-G%C3%B3rce-255581354538501/"
           variant="blue"
-          class="mt-3 text-facebookBlue"
+          class="mt-3 md:text-lg text-facebookBlue"
         >
           Facebook
         </base-link>

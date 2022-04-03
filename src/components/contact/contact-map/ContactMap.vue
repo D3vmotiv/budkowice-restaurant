@@ -19,7 +19,7 @@
 
     </article>
 </template>
-<style lang="postcss">
+<style lang="postcss" scoped>
 .map--background__moved {
     @apply pl-4 pb-4 relative z-20;
 }
