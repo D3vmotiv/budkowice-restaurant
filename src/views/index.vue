@@ -26,13 +26,14 @@ useHead({
   <main
     class="
       p-5 bg-white-ligth flex flex-col gap-y-12
-      md:px-7 py-12 gap-y-16 md:bg-white 
+      md:px-0 md:py-0 md:gap-y-0 md:bg-white 
     "
   >
   
     <app-card
       image-url="/images/image_1.jpg"
       section-name="Menu"
+      class="md:px-7 md:py-16"
     >
       <template #title>
         <h2 class="text-xl md:text-2xl lg:text-3xl mb-3">
@@ -55,7 +56,7 @@ useHead({
     <app-card
       image-url="/images/image_3.jpg"
       section-name="Kontakt"
-      reversed
+      class="md:px-7 md:py-16 md:bg-primary-light"
     >
       <template #title>
         <h2 class="text-xl md:text-2xl lg:text-3xl mb-3">
@@ -78,6 +79,8 @@ useHead({
     <app-card
       image-url="/images/image_4.jpg"
       section-name="Nasz facebook"
+      class="md:px-7 md:py-16"
+      reversed
     >
       <template #title>
         <h2 class="text-xl md:text-2xl lg:text-3xl mb-3">
