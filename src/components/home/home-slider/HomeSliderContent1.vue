@@ -9,7 +9,7 @@
         Zobacz jakie to proste!
     </p>
 
-    <base-button class="mt-5">
+    <base-button class="mt-5" to="/menu">
         Menu
     </base-button>
 
