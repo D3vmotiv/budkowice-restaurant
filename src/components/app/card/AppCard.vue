@@ -74,10 +74,6 @@ const props = defineProps<{
     </article>
 </template>
 <style lang="postcss" scoped>
-.protect {
-    @apply after:bg-facebookBlue-ligth;
-}
-
 .card--background__moved {
     @apply md:pl-4 md:pb-4 md:relative md:z-20;
 }
