@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-screen h-[50vh] welcome--image flex flex-col justify-center items-center"
+    class="w-full h-[50vh] welcome--image flex flex-col justify-center items-center"
     style="background-image: url('/images/contact_1.jpg')"
   >
     <slot name="top" />

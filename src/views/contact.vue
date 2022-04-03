@@ -35,7 +35,8 @@ useHead({
             class="
                 p-5 bg-white-ligth flex flex-col gap-y-12
                 md:px-7 md:py-10 md:gap-y-20
-                lg:px-16 lg:gap-y-24
+                lg:px-16 lg:gap-y-32 lg:py-16
+                xl:px-24
             "
         >
             <contact-card

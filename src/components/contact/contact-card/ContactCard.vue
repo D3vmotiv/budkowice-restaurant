@@ -9,7 +9,12 @@ const props = defineProps<{
 </script>
 <template>
     <article
-        class="w-full md:flex md:gap-x-12 md:items-center"
+        class="
+            w-full
+            md:flex md:gap-x-12 md:items-center
+            lg:justify-center lg:gap-x-24
+            xl:gap-x-32
+        "
         :class="{
             'md:flex-row-reverse': props.reversed,
             'md:flex-row': !props.reversed,
@@ -17,7 +22,7 @@ const props = defineProps<{
         }"
         :aria-label="props.sectionName"
     >
-        <div class="hidden md:block card--background__moved flex-grow">
+        <div class="hidden md:block card--background__moved flex-grow max-w-[500px]">
             <img
                 class="
                     w-full h-80 object-cover
@@ -28,7 +33,7 @@ const props = defineProps<{
             >
         </div>
 
-        <div class="md:flex-grow-[2]">
+        <div class="md:flex-grow-[2] lg:max-w-md">
             <h2 class="text-xl text-primary mb-2 pl-3 md:text-2xl">
                 <slot name="header" />
             </h2>
@@ -46,7 +51,9 @@ const props = defineProps<{
 }
 
 .card--background__moved::after {
-    @apply hidden md:absolute md:block z-[-1] top-8 right-8 bottom-0 left-0 bg-primary-light;
+    @apply
+        hidden md:absolute md:block z-[-1] top-8 right-8 bottom-0 left-0 bg-primary-light
+        lg:top-16 lg:right-16 lg:-left-8 lg:-bottom-8;
     content: '';
 }
 
@@ -54,6 +61,6 @@ const props = defineProps<{
     @apply md:pl-0 md:pr-4;
 }
 .card__reversed .card--background__moved::after {
-    @apply right-0 left-8;
+    @apply right-0 lg:left-16 lg:-right-8;
 }
 </style>

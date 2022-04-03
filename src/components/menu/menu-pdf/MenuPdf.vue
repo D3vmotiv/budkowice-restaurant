@@ -19,7 +19,8 @@ const props = defineProps<{
 
             <p>
                 ale nie przejmuj się! <br><br>
-                Przygotowaliśmy dla Ciebie rozwiązanie tego problemu. <br>
+                Przygotowaliśmy dla Ciebie rozwiązanie. <br><br>
+
                 Jeśli chcesz możesz pobrać zawartość klikając 
 
                 <a :href="props.url" download class="text-primary font-bold">tutaj</a>.
