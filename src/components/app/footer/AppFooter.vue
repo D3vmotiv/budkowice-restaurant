@@ -6,9 +6,13 @@ import contactInfo from "@/const/contactInfo.ts"
     <footer class="bg-secondary text-white p-5">
 
         <a href="/">
-            <h3 class="text-lg mb-2">
-                Karczma na Górce
-            </h3>
+            <img
+                src="/images/logo.png"
+                alt="Karczma na Górce"
+                width="711"
+                height="200"
+                class="w-1/2 mb-2"
+            />
         </a>
 
         <p class="text-sm">
