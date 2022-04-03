@@ -22,9 +22,7 @@ const props = defineProps<{
                 Przygotowaliśmy dla Ciebie rozwiązanie tego problemu. <br>
                 Jeśli chcesz możesz pobrać zawartość klikając 
 
-                <a :href="props.url" download class="text-primary font-bold">tutaj</a>
-            
-                pobrać wyświetlaną zawartość.
+                <a :href="props.url" download class="text-primary font-bold">tutaj</a>.
 
                 <br><br>
 
@@ -38,7 +36,7 @@ const props = defineProps<{
                 naszą stronę na facebooku
                 </a>
                 
-                i tam znaleźć interesujące Cię informację!
+                i tam znaleźć interesujące Cię informacje!
             </p>
         </div>
     </object> 
