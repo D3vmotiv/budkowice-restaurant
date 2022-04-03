@@ -23,7 +23,7 @@ const {
         <!-- Mobile nav -->
         <div class="block md:hidden">
             <div
-                class="navigation--bar"
+                class="navigation--bar flex"
                 :class="{'navigation--bar__filed': shouldBeFilled}"
             >
                 <button
@@ -46,7 +46,7 @@ const {
 
         <!-- Desktop nav -->
         <app-navigation-desktop-links
-            class="hidden navigation--bar md:block"
+            class="navigation--bar hidden md:flex"
             :class="{'navigation--bar__filed': shouldBeFilled}"
         />
     </nav>
@@ -79,7 +79,7 @@ const {
 }
 
 .navigation--bar {
-    @apply fixed inset-0 z-50 w-screen h-20 flex justify-end items-center p-5 motion-safe:transition-all;
+    @apply fixed inset-0 z-50 w-screen h-20 justify-end items-center p-5 motion-safe:transition-all;
 }
 .navigation--bar__filed {
     @apply bg-primary;
