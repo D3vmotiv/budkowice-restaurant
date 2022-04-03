@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import contactInfo from "@/const/contactInfo.ts"
 </script>
 
 <template>
@@ -54,75 +54,22 @@
         </h4>
 
         <ul>
-            <li>
+            <li v-for="contactItem in contactInfo" :key="contactItem.value">
                 <a
-                    href="https://goo.gl/maps/SggQTNRHx5GCTFTr8"
-                    target="_blank"
-                    rel="noopener nofollow"
+                    :href="contactItem.link.url"
+                    :target="contactItem.link.outside ? '_blank' : undefined"
+                    :rel="contactItem.link.outside ? 'noopener nofollow' : undefined"
                     class="inline-flex items-center py-1 text-sm w-full"
                 >
                     <img
-                        src="/images/localization.svg"
-                        alt="Lokalizacja:"
+                        :src="contactItem.image.default"
+                        :alt="`${contactItem.altName}:`"
                         width="20"
                         height="20"
                         class="mr-2"
                     >
 
-                    Wołczyńska 2, 46-030 Stare Budkowice
-                </a>
-            </li>
-
-            <li>
-                <a
-                    href="tel:+48774210498"
-                    class="inline-flex items-center py-1 text-sm w-full"
-                >
-                    <img
-                        src="/images/phone.svg"
-                        alt="Numer telefonu:"
-                        width="20"
-                        height="20"
-                        class="mr-2"
-                    >
-
-                    +48 774 210 498
-                </a>
-            </li>
-
-            <li>
-                <a
-                    href="mailto:karczmanagorce@gmail.com"
-                    class="inline-flex items-center py-1 text-sm w-full"
-                >
-                    <img
-                        src="/images/email.svg"
-                        alt="Adres email:"
-                        width="20"
-                        height="20"
-                        class="mr-2"
-                    >
-
-                    karczmanagorce@gmail.com
-                </a>
-            </li>
-
-            <li>
-                <a
-                    href="https://www.facebook.com/Karczma-na-G%C3%B3rce-255581354538501/"
-                    target="_blank"
-                    rel="noopener nofollow"
-                    class="inline-flex items-center py-1 text-sm w-full"
-                >
-                    <img
-                        src="/images/facebook.svg"
-                        alt="Strona facebook:"
-                        width="20"
-                        height="20"
-                        class="mr-2"
-                    >
-
-                    facebook
+                    {{ contactItem.value }}
                 </a>
             </li>
         </ul>
