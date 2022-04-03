@@ -86,7 +86,7 @@ useHead({
 
       <template #bottom>
         <base-link
-          to="/menu"
+          href="https://www.facebook.com/Karczma-na-G%C3%B3rce-255581354538501/"
           variant="blue"
           class="mt-3 text-facebookBlue"
         >
