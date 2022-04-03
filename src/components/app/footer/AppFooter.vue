@@ -25,6 +25,8 @@ import contactInfo from "@/const/contactInfo.ts"
 
             <p class="text-sm max-w-md">
                 Zapraszamy serdecznie do Karczmy na Górce usytuowanej w sercu Starych Budkowic.
+                Karczma na Górce świadczy również usługi cateringowe.
+                Z przyjemnością przygotujemy dla Państwa przyjęcia weselne, komunie oraz inne imprezy okolicznościowe.
             </p>
         </div>
 

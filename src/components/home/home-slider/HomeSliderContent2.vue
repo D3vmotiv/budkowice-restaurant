@@ -9,7 +9,7 @@
         Przepyszne dania w dobrej cenie tylko u nas!
     </p>
 
-    <base-button class="mt-5">
+    <base-button class="mt-5" to="/kontakt">
         Kontakt
     </base-button>
 

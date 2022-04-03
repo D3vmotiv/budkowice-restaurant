@@ -44,7 +44,7 @@ useHead({
       </template>
 
       <template #default>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales a aliquam et odio bibendum.
+         Polecamy potrawy kuchni śląskiej oraz polskiej z elementami kuchni włoskiej
       </template>
 
       <template #bottom>
@@ -68,7 +68,7 @@ useHead({
       </template>
 
       <template #default>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales a aliquam et odio bibendum.
+         Atmosfera naszego lokalu podoba się i młodszym i starszym. Staramy się, by każdy znalazł u nas to, co lubi. Mamy nadzieję, że muzyka, miła obsługa, obecność stałych bywalców i smaczne jedzenie sprawi, że poczujecie się tutaj jak w domu. 
       </template>
 
       <template #bottom>
@@ -94,7 +94,7 @@ useHead({
       </template>
 
       <template #default>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales a aliquam et odio bibendum.
+        Jesteśmy również dostępni na facebooku, gdzie mogą Państwo znaleźć wiele aktualnych informacji o tym co dzieje się w naszej restauracji!
       </template>
 
       <template #bottom>
