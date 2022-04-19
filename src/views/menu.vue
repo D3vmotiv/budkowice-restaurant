@@ -19,7 +19,7 @@ useHead({
     <div class="min-h-screen">
         <app-navigation filled />
 
-        <menu-pdf url="/files/Menu ceny lipiec 2021.pdf" />
+        <menu-pdf url="/files/Menu.pdf" />
         
         <app-footer />
     </div>
