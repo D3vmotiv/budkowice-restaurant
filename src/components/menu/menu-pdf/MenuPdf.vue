@@ -1,8 +1,21 @@
 <script setup lang="ts">
+import { ref, onMounted } from "vue"
 
 const props = defineProps<{
     url: string;
 }>();
+
+const objectNotRenderedHeader = ref<null | HTMLElement>(null)
+
+onMounted(() => {
+    if (!objectNotRenderedHeader.value) return
+
+    const isPdfViewRendered = !Boolean(objectNotRenderedHeader.value.offsetParent)
+
+    if (isPdfViewRendered) return
+
+    window.open(props.url, '_blank')?.focus()
+})
 
 </script>
 <template>
@@ -13,7 +26,7 @@ const props = defineProps<{
     >
         <div class="p-5 h-100 flex flex-col justify-center text-center">
 
-            <h2 class="text-xl mb-4">
+            <h2 class="text-xl mb-4" ref="objectNotRenderedHeader">
                 Pobieranie rozpoczęte!
             </h2>
 
