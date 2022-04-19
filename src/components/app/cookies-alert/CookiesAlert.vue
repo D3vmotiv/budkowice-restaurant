@@ -1,10 +1,13 @@
 <script setup>
-import { ref } from "vue"
+import { ref, onMounted } from "vue"
 
-const cookiesAlert = localStorage.getItem("cookies-alert");
 const today = new Date();
+const isAlertSeen = ref(false);
 
-const isAlertSeen = ref(cookiesAlert && cookiesAlert !== "" && (new Date(cookiesAlert)) > today)
+onMounted(() => {
+    const cookiesAlert = localStorage.getItem("cookies-alert");
+    isAlertSeen.value = cookiesAlert && cookiesAlert !== "" && (new Date(cookiesAlert)) > today 
+})
 
 const handleAcceptCookies = () => {
     // Accept for 24hours
