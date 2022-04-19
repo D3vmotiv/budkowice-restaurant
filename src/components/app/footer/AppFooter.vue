@@ -19,7 +19,7 @@ import contactInfo from "@/const/contactInfo.ts"
                     alt="Karczma na Górce"
                     width="711"
                     height="200"
-                    class="w-1/2 mb-2 md:mb-5 xl:mb-8 max-w-[200px]"
+                    class="w-1/2 mb-3 md:mb-5 xl:mb-8 max-w-[200px]"
                 />
             </a>
 
