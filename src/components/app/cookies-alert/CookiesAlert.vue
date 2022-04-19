@@ -1,3 +1,18 @@
+<script setup>
+import { ref } from "vue"
+
+const cookiesAlert = localStorage.getItem("cookies-alert");
+const today = new Date();
+
+const isAlertSeen = ref(cookiesAlert && cookiesAlert !== "" && (new Date(cookiesAlert)) > today)
+
+const handleAcceptCookies = () => {
+    // Accept for 24hours
+    localStorage.setItem("cookies-alert", `${(new Date(today.getTime() + (24 * 60 * 60 * 1000)))}`)
+    isAlertSeen.value = true
+}
+
+</script>
 <template>
     <div
         class="
@@ -7,6 +22,7 @@
             bg-primary text-white p-5
             flex flex-col gap-3
         "
+        :class="isAlertSeen ? 'hidden' : ''"
     >
         <h2 class="text-lg">
             Nasza strona używa plików Cookies.
@@ -19,6 +35,7 @@
         </p>
 
         <base-button
+            @click="handleAcceptCookies"
             class="important-w-full"
             white
         >
