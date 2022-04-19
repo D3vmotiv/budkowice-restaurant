@@ -1,8 +1,12 @@
 <script setup lang="ts">
+import { computed } from "vue"
 
 const props = defineProps<{
     to?: string;
+    white?: boolean;
 }>();
+
+const buttonVariantClasses = computed(() => !props.white ? 'text-white bg-primary after:border-primary' : 'text-primary bg-white after:border-white')
 
 </script>
 
@@ -10,7 +14,8 @@ const props = defineProps<{
 
     <router-link v-if="props.to" :to="props.to" class="block">
         <button
-            class="btn-text btn-sizes btn-bg bg-primary"
+            class="btn-text btn-sizes btn-bg"
+            :class="buttonVariantClasses"
         >
             <slot></slot>
         </button>
@@ -18,7 +23,8 @@ const props = defineProps<{
 
     <button
         v-else
-        class="btn-text btn-sizes btn-bg bg-primary"
+        class="btn-text btn-sizes btn-bg"
+        :class="buttonVariantClasses"
     >
         <slot></slot>
     </button>
@@ -27,7 +33,7 @@ const props = defineProps<{
 
 <style lang="postcss" scoped>
 .btn-text {
-    @apply text-white font-Poppins font-bold text-center text-lg;
+    @apply font-Poppins font-bold text-center text-lg;
 }
 
 .btn-sizes {
@@ -39,7 +45,7 @@ const props = defineProps<{
 }
 
 .btn-bg::after {
-    @apply w-full h-full block absolute -right-1 top-1 border-2 border-primary motion-safe:transition-all;
+    @apply w-full h-full block absolute -right-1 top-1 border-2 motion-safe:transition-all;
     content: '';
 }
 
