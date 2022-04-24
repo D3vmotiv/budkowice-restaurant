@@ -36,6 +36,17 @@ const contactInfo: contactItem[] = [
         },
     },
     {
+        altName: 'Dodatkowy numer telefonu',
+        value: '781 058 594',
+        link: {
+            url: 'tel:+781058594',
+        },
+        image: {
+            default: '/images/phone.svg',
+            alternative: '/images/phone-primary.svg',
+        },
+    },
+    {
         altName: 'Adres email:',
         value: 'karczmanagorce@gmail.com',
         link: {
