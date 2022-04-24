@@ -40,3 +40,7 @@ h1 {
 p {
     @apply text-base
 }
+
+::selection {
+    @apply bg-primary text-white;
+}
