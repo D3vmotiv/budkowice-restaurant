@@ -33,9 +33,9 @@ import contactInfo from "@/const/contactInfo.ts"
         <hr class="my-4 md:hidden">
 
         <div>
-            <h4 class="text-base mb-1">
+            <h3 class="text-base mb-1">
                 Szybka nawigacja
-            </h4>
+            </h3>
 
             <ul class="text-sm">
                 <li>
@@ -67,9 +67,9 @@ import contactInfo from "@/const/contactInfo.ts"
         <hr class="my-4 md:hidden">
 
         <div class="md:text-right">
-            <h4 class="text-base mb-2">
+            <h3 class="text-base mb-2">
                 Dane kontaktowe
-            </h4>
+            </h3>
 
             <ul>
                 <li v-for="contactItem in contactInfo" :key="contactItem.value">
