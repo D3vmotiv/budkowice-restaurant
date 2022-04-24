@@ -38,7 +38,7 @@ const openHours: openHourItem[] = [
     {
         day: 'Niedziela',
         shortDay: 'Niedz.',
-        value: '11:30-21:00',
+        value: '12:00-21:00',
     },
 ]
 
