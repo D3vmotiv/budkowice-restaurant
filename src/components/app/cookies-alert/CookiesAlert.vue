@@ -1,26 +1,13 @@
 <script setup>
-import { ref, onMounted } from "vue"
+import useCookiesAlert from "./useCookiesAlert.ts"
 
-const today = new Date();
-const isAlertSeen = ref(false);
-
-onMounted(() => {
-    const cookiesAlert = localStorage.getItem("cookies-alert");
-    isAlertSeen.value = cookiesAlert && cookiesAlert !== "" && (new Date(cookiesAlert)) > today 
-})
-
-const handleAcceptCookies = () => {
-    // Accept for 24hours
-    localStorage.setItem("cookies-alert", `${(new Date(today.getTime() + (24 * 60 * 60 * 1000)))}`)
-    isAlertSeen.value = true
-}
-
+const { isAlertSeen, handleAcceptCookies } = useCookiesAlert()
 </script>
 <template>
     <div
         class="
-            absolute bottom-0 left-0 right-0
-            shadow-lg
+            fixed z-50 bottom-0 left-0 right-0
+            shadow-xl
             sm:bottom-2 sm:left-auto sm:right-2 sm:w-96
             bg-primary text-white p-5
             flex flex-col gap-3
@@ -32,9 +19,7 @@ const handleAcceptCookies = () => {
         </h2>
         
         <p class="text-sm mb-2">
-            Witryna wykorzystuje ciasteczka (ang. cookies) <br class="hidden sm:inline"> w celach statycznych.
-
-            <a href="/cookies" class="underline">Więcej tutaj</a>.
+            W celu prawidłowego jej działania oraz korzystania z narzędzi analitycznych, reklamowych i społecznościowych -
         </p>
 
         <base-button
