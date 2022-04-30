@@ -2,7 +2,7 @@
 
     <h1 class="mb-2 md:text-2xl lg:text-3xl">
         Restauracja <br />
-        "Karczma na górce"
+        "Karczma na Górce"
     </h1>
 
     <p class="px-10 md:text-lg">
